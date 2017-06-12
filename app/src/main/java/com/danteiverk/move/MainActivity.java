@@ -26,6 +26,7 @@ public class MainActivity extends TabActivity implements RadioGroup.OnCheckedCha
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //ceshi
         mContext = this;
         tabHost = this.getTabHost();
         tabHost.setup();
