@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y680"
+            android:background="@mipmap/img_dashboard_running">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y30"
+                android:text="MOVE"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/y80" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y150"
+                android:text="做的好好呀！即刻Check下您的进度。"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/y30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x50"
+                android:layout_marginTop="@dimen/y50"
+                android:src="@mipmap/ic_info" />
+
+            <com.danteiverk.move.ArcProgressBar
+                android:id="@+id/apb"
+                android:layout_width="@dimen/x500"
+                android:layout_height="@dimen/y400"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y250" />
+            <TextView
+                android:layout_marginTop="@dimen/y370"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/y55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="2500"/>
+            <TextView
+                android:layout_marginTop="@dimen/y450"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/y25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="每日平均"/>
+            <TextView
+                android:layout_toLeftOf="@id/apb"
+                android:layout_marginTop="@dimen/y460"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/y30"/>
+            <TextView
+                android:layout_toRightOf="@id/apb"
+                android:layout_marginTop="@dimen/y460"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5K"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/y30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y500"
+                android:text="最新更新: 03时20分"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/y28" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y30"
+            android:background="#f7f7f7"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y250"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/y50"
+                        android:layout_height="@dimen/y50"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/y20"
+                        android:layout_marginTop="@dimen/y20"
+                        android:src="@mipmap/ic_step" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x90"
+                        android:text="步数"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/y30" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x20"
+                        android:src="@mipmap/ic_more" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y80"
+                    android:text="今日" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y130"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y35" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y80"
+                    android:text="步数" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y250"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/y50"
+                        android:layout_height="@dimen/y50"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/y20"
+                        android:layout_marginTop="@dimen/y20"
+                        android:src="@mipmap/ic_calories" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x90"
+                        android:text="卡路里"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/y30" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x20"
+                        android:src="@mipmap/ic_more" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y80"
+                    android:text="今日" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y130"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y35" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y80"
+                    android:text="卡路里" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y250"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/y50"
+                        android:layout_height="@dimen/y50"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/y20"
+                        android:layout_marginTop="@dimen/y20"
+                        android:src="@mipmap/ic_weight" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x90"
+                        android:text="体重"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/y30" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x20"
+                        android:src="@mipmap/ic_more" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y80"
+                    android:text="今日" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y130"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y35" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y80"
+                    android:text="公斤" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y250"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/y50"
+                        android:layout_height="@dimen/y50"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/y20"
+                        android:layout_marginTop="@dimen/y20"
+                        android:src="@mipmap/ic_sleep" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x90"
+                        android:text="睡觉"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/y30" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x20"
+                        android:src="@mipmap/ic_more" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y80"
+                    android:text="今日" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y130"
+                    android:text="00:00"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/y35" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/y80"
+                    android:text="小时:分钟" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

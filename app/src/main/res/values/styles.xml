@@ -1,0 +1,235 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+
+    -->
+    <style name="AppBaseTheme" parent="Base.Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+    <!--<style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">-->
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/darkslategrey</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="project_info_text" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/projecttitle</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="project_info_detail" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/projectdetail</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <!-- 项目Listview -->
+    <style name="project_info_textsize" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <!-- 提现文字 -->
+    <style name="txtext" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_marginLeft">@dimen/accounts_left_all</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="txmoney" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/accounts_left_all</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/y25</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <!-- 提现标题文字样式 -->
+    <style name="global_title_text" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- 账户表格布局样式 -->
+    <!-- 账户表格布局样式 -->
+    <style name="account_tableRow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/accounts_left_all</item>
+        <item name="android:layout_marginBottom">@dimen/y5</item>
+        <item name="android:layout_marginTop">@dimen/y5</item>
+    </style>
+
+    <style name="account_tableRow_key" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/blacktext</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="account_tableRow_value" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:ellipsize">none</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_marginRight">@dimen/x2</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 对换记录 -->
+    <style name="account_shop_dhjl_text" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/blacktext</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 确认兑换 -->
+
+    <style name="account_shop_qrdh_goodsdetail" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/blacktext</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <style name="account_message_state" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="accounts_imgleft">
+        <item name="android:layout_margin">@dimen/accounts_left_all</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="accounts_text" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="accounts_imgright" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_marginRight">@dimen/accounts_right_all</item>
+        <item name="android:layout_width">@dimen/x12</item>
+        <item name="android:layout_height">@dimen/y8</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="mystyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="mystyle2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="dialog_content" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/y10</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="mystyle3" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_animotion_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_animotion_exit</item>
+    </style>
+
+
+
+    <style name="new_account_zaitoujin">
+        <item name="android:textColor">@color/graytext</item>
+        <item name="android:layout_marginLeft">@dimen/x65</item>
+        <item name="android:textSize">@dimen/y23</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="new_account_zaitoujin2">
+        <item name="android:layout_marginRight">@dimen/x70</item>
+        <item name="android:textColor">@color/blacktext</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/y28</item>
+    </style>
+    
+
+
+
+    
+    <style name="Widget.GifMoviewView" parent="@android:style/Widget"></style>
+</resources>
